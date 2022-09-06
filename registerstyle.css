@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+body {
+    font-style: italic;
+    font-family: "Lucida Handwriting",cursive;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.info.error input {
+    border-color: var(--error-color);
+}
+
+.info.success input {
+    border-color: var(--success-color);
+}
+.info.success .col-4 .row .col-1 input[type='radio']::after {
+    background-color: var(--success-color);
+}
+.info.error .col-4 .row .col-1 input[type='radio']::after {
+    background-color: var(--error-color);
+}
+.info.error select {
+    border-color: var(--error-color);
+}
+
+.info.success select {
+    border-color: var(--success-color);
+}
+.info small {
+    color: var(--error-color);
+}
